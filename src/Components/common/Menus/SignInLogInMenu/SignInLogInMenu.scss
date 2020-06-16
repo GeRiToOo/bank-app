@@ -1,0 +1,66 @@
+.SignInLogInMenu {
+    position: absolute;
+    right: 0;
+    width: 15%;
+    height: 100%;
+
+    nav {
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+        height: 100%;
+        width: 100%;
+        min-width: 150px;
+        display: flex;
+        align-items: center;
+
+        .nav_list {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #D9D2D1;
+            font-weight: 900;
+
+            li {
+                position: relative;
+                color: #D9D2D1;
+                margin: 0;
+                padding: 0;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                text-transform: uppercase;
+                text-align: right;
+
+                &:hover {
+                    color: #F4613A;
+                    cursor: pointer;
+                }
+
+                &:before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0;
+                    height: 2px;
+                    width: 100%;
+                    background: #F4613A;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 0.4s linear;
+                }
+
+                &:hover:before {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+
+            }
+        }
+    }
+}
